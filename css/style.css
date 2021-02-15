@@ -29,69 +29,37 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+body {line-height: 1;}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	content: ''; content: none;
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 /* restore some styling*/
-ul {   
-
+ul {
     list-style-type: disc;   
-    
     list-style-position: outside;
-    
-    padding-left: 1rem;
-    
-    }
-    
-    ol {   
-    
-    list-style-type: decimal;   
-    
+    padding-left: 1rem;    
+}
+ol {
+    list-style-type: decimal;
     list-style-position: outside;
-    
     padding-left: 1rem;
-    
-    }
-    
-    ul ul, ol ul {   
-    
-    list-style-type: circle;
-    
-    }
-    
-    ol ol, ul ol {   
-    
-    list-style-type: lower-latin;
-    
-    }
-    
-    strong, b { 
-    
-    font-weight: bold;
-    
-    }
-    
-    em, i { 
-    
-    font-style: italic;
-    
-    }
-    /* my custom CSS */
+}
+ul ul, ol ul {list-style-type: circle;}
+ol ol, ul ol {list-style-type: lower-latin;}
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* my custom CSS */
     html{
         padding: 0rem 1rem;
         font-size: 100%;
@@ -105,18 +73,14 @@ ul {
         line-height:1.5rem;
         background-color: white;
     }
-    h1{
-        font-size: 2rem;
-    }
+    h1 {font-size: 2rem;}
     h2{
         font-size: 1.5rem;
         margin-top:2rem;
         margin-bottom: 1rem;
         margin-left:1.5rem;
     }
-    img{
-        border:grey 1px solid;
-    }
+    img {border:grey 1px solid;}
     .persona-photo{
         float: left;
         padding:1rem;
@@ -134,10 +98,7 @@ ul {
        padding:1rem;
        margin: 1rem;
     }
-    .ben-analysis{
-        display: flex;
-        flex-flow: row nowrap;
-    }
+    .ben-analysis {display: flex; flex-flow: row nowrap;}
     .ben-analysis-content{
        width:calc((100vw - 0rem)/2);
         margin:1rem;
@@ -158,35 +119,43 @@ ul {
        text-decoration:underline;
    }
    .content{
-      margin:0 1rem;
+      margin:0 1rem; padding: 2rem;
       background-color: rgb(247, 241, 225);
-      padding: 2rem;
    }
-   th{
-       font-weight: bold;
-       text-align: left;
-   }
-   td{
-       padding-left:2rem;
-   }
-   .ben-persona-title{
-    font-size: x-large;
-    font-weight: lighter;
-    }
-    .user-info{
-       font-weight: bold;
-    }
-   .ben-green{
-       color:green;
-       font-size:large
-   }
-   .ben-red{
-       color:red;
-       font-size:large;
-   }
-   .green{
-    color:green;
+   th {font-weight: bold; text-align: left;}
+   td {padding-left:2rem;}
+   .ben-persona-title {font-size: x-large; font-weight: lighter;}
+    .user-info {font-weight: bold;}
+   .ben-green {color:green; font-size:large;}
+   .ben-red {color:red; font-size:large;}
+   .green {color:green;}
+   .red {color:red;}
+
+/*-----Jeff's Styling-----*/
+.jeff-main {background-color: #c2b299aa; margin: .8em; border-radius: 14px;}
+.jeff-main h2 {
+    padding: 1em 0; text-align: center; 
+    margin-left: 0; margin-bottom: 0;
+    font-weight: bold;
 }
-.red{
-    color:red;
+.jeff-main p {padding: 0 1em;}
+.jeff-sec {
+    background-color: #c35736; border-radius: 14px;
+    padding: 1em; margin: .8em; box-shadow: #222 0 4px 4px;
 }
+.jeff-sec p {
+    padding: .5em; margin: 2rem;
+    text-align: center; color: rgb(18, 20, 22);
+    border-bottom: solid 2px #222; 
+}
+.jeff-list {
+    border-radius: 14px;
+    background-color: rgba(156, 126, 77, 0.295); 
+    text-align: left; margin: 1em .5em; padding: 2em;
+    box-shadow: inset 2px 4px 10px rgba(0, 0, 0, .5),
+                inset 2px 4px 10px rgba(0, 0, 0, .5),
+                inset -3px -4px 6px rgba(0, 0, 0, .5);
+}
+.jeff-list li {padding: .5em;}
+.jeff-flex{display: flex; padding: .8em}
+section {flex: 1;}
